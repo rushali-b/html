@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* html{
+    scroll-behavior: smooth;
+} */
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.container{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    padding-top: 0px;
+    padding-left: 10px;
+    border: 12px;
+    width: 100%;
+    height: 100px;
+    background-color: brown;
+    color: aliceblue;
+}
+
+#logo {
+    margin: 10px 34px;
+
+}
+
+#logo img {
+    /* opacity: 0.5; */
+    /* z-index: -1; */
+    margin: 3px 6px;
+    width: 100px;
+    height: 100px;
+}
+
+.cont{background-color: rgb(212, 203, 203);
+    /* border: 5px solid black; */
+    display:grid;
+    margin-bottom: 100px;
+    /* grid-template-columns: 2fr 1fr ; */
+    grid-template-areas: 
+    'reg reg reg reg' 
+    'section section aside aside';
+    grid-gap: 1rem;
+    
+    
+}
+
+#reg{
+   margin-top: 10px;
+    grid-area: reg;
+    margin-left: 600px;
+}
+
+#section{background-color: rgb(212, 203, 203);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 13%);
+    grid-area: section;
+    margin-left: 20px;
+
+}
+
+#aside{display: grid;
+
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+    margin-left: 10;
+    /* grid-area: aside; */
+}
+.item{
+    /* height:200px;
+    width: 200px; */
+   
+    /* background-color: white; */
+    
+}
+.heading{color: brown;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 10px;
+}
+.para{background-color: white;
+    display:block;
+    margin-left: 20px;
+    /* border:5px solid black */
+}
+
+.sub{color: brown;
+    background-color: white;
+    width:400px;
+    padding-left: 30px;
+    height: 400px;
+    /* height: 400px; */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: rgb(112, 105, 105);
+    color: white;
+    padding: 3px 20px;
+
+    
+}
+
+.new{
+    background-color: white;
+}
+.box{background-color: white;
+    /* border: 5px solid rgb(45, 41, 41); */
+    margin: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 13%);
+}
+
+#top{
+    margin:0px;
+}
+
+#fac{
+    padding-top: 30px;
+}
